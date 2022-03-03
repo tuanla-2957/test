@@ -1,0 +1,12 @@
+include ../../data/list-restaurant
+
+each item, index in listRestaurant
+    div.card-wrapper.col-4
+        a(href=item.link)
+            div.card
+                img.card__img--sale(src=item.img, alt="") 
+                div.card__info--sale 
+                    div.card__text.card__text--line  
+                        h4.card__name=item.name
+                        div.card__address=item.address
+                    p.card__discount=item.discount

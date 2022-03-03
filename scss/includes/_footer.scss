@@ -1,0 +1,28 @@
+.footer {
+    background-color: $--bg-gray;
+    padding-top: 50px;
+    font-size: $fs-l;
+
+    &__wrapper {
+        border-top: 1px solid rgba(0,0,0,.1);
+        padding: 40px 0 25px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .block {
+        &__title {
+            font-size: $fs-base;
+            color: $--text-dark;
+            margin-top: 12px;
+            margin-bottom: 25px;
+        }
+
+        a {
+            color: $--text-blue;
+        }
+        &__list p {
+            margin-bottom: 3px;
+        }
+    }
+}

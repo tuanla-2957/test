@@ -1,0 +1,115 @@
+.card-wrapper {
+    padding: 8px;
+}
+
+.card--large {
+    flex-direction: row;
+}
+
+.card {
+    border-radius: 6px;
+    border: 0;
+
+    &__img {
+        border-radius: 6px;
+    }
+
+    &__img--large {
+        width: 144px;
+    }
+
+    &__img--sale {
+        border-radius: 6px 6px 0 0;
+    }
+
+    &__info--sale {
+        border: 1px solid #d7d7d7;
+        border-radius: 0px 0px 6px 6px;
+    }
+
+    &__text {
+        padding: 5px 8px;
+    }
+
+    &__text--line {
+        border-bottom: 1px solid #ebebeb;
+    } 
+
+    &__name {
+        font-size: $fs-l;
+        font-weight: 700px;
+        color: $--text-dark;
+        margin-bottom: 1px;
+        margin-top: 5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    &__name--large {
+        font-size: $fs-base;
+        margin-top: 0;
+    }
+
+    &__address {
+        font-size: $fs-xs;
+        color: $--text-gray;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__address--large {
+        font-size: $fs-l;
+        margin: 4px 0px;
+    }
+
+    &__discount {
+        font-size: $fs-s;
+        color: $--blue-dark;
+        font-weight: 700;
+        padding: 8px 8px 5px;
+        margin: 0;
+    }
+}
+
+.card:hover{
+    box-shadow: rgb(0 0 0 /20%) 0px 1px 6px 2px;
+}
+
+.card--large {
+    box-shadow: none !important;
+    border: none;
+}
+
+.super-card {
+    padding: 50px 350px 50px 150px;
+    margin-top: 60px;
+    background-color: $--bg-white;
+
+    @media only screen and (max-width: 768px) {
+        padding: 50px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-size: $fs-3xl;
+    }
+
+    &__text {
+        color: $--text-color;
+        margin-bottom: 16px;
+        line-height: $--lh-xs;
+    }
+
+    .corporation {
+        position: absolute;
+        bottom: -1px;
+        right: 0;
+        z-index: 2;
+        line-height: 0;
+        display: flex;
+        justify-content: center;
+        width: 350px;
+    }
+}

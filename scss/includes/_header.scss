@@ -1,0 +1,21 @@
+@use "./variables";
+@import "./navbar";
+
+.header {
+    background-color: $--bg-white;
+    .header__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 70px;    
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        img {
+            height: 30px;
+            margin-right: 72px;
+        }
+    }
+}

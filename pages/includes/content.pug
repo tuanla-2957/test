@@ -1,0 +1,50 @@
+include ../mixins/mixins
+include ../data/category
+div.content
+    div.content-wrapper
+        div.container 
+            div.row.d-flex.justify-content-between
+                //- search-infor
+                div.now-infor.col-xl-5.d-none.d-xl-block
+                    div.search
+                        h1.search__title Đặt Đồ ăn, giao hàng từ 20'...
+                        div.search__local có 66137 địa điểm ở TP. HCM từ 00:00 - 23:59
+                        div.form-search
+                            div.input-group
+                                input.input-search(type="text" placeholder="Tìm địa điểm, món ăn, địa chỉ...")
+                                button.btn.btn-primary.button-search
+                                    i.fas.fa-search 
+                        div.search__filter
+                            each item, index in category 
+                                button.button-white=item.title
+                        div.mb-2.mt-3 Sử dụng App ShopeeFood để có nhiều giảm giá 
+                //- list card
+                div.now-list.col-xl-7.col-12
+                    div.main-card.main-card__other.row.no-gutters
+                        div.col-auto
+                            span.text-blue.text-bold Đồ ăn
+                            i.fas.fa-long-arrow-alt-right.text-gray.ms-2.fontxs
+                        div.col.text-gray.pe-2 Chọn địa chỉ giao hàng
+                        div.col-auto
+                            i.fas.fa-angle-right.text-gray.ms-2.fontxs
+                    div.main-card.row
+                        +titleItem("Ưu đãi", "Xem tất cả")
+                        include ./card/sale-card
+                        div.text-center.mt-2 
+                            a.text-blue(href="#") 
+                                span.pe-1 Xem thêm
+                                <i class="fas fa-redo font12 "></i>
+                    div.main-card.row
+                        +titleItem("Bộ sưu tập", "Xem tất cả")
+                        include ./card/discount-card
+                    div.main-card.row
+                        include ./card/food-card
+                        div.text-center.mt-2 
+                            a.text-blue(href="#") 
+                                span.pe-1 Xem thêm
+                                <i class="fas fa-redo font12 "></i>
+    div.content-bot.py-3
+        div.container 
+            +superCard("ShopeeFood Merchant App", "ShopeeFood Merchant", "ShopeeFood.vn", " là ứng dụng quản lý đơn hàng cho các nhà hàng đối tác của dịch vụ đặt món tận nơi ", " luôn sẵn sàng hợp tác với các nhà hàng, quán ăn, cafe... để mở rộng kinh doanh cũng như gia tăng khách hàng. Hãy kết nối vào hệ thống đặt và giao hàng để giảm bớt chi phí quản lý, vận hành, marketing, công nghệ... " , "width:294px", "https://shopeefood.vn/app/assets/img/banner-phone-reg-merchant.png?d657e88bd087afc6919b1c6c6da0dc49", "NowMerchant App")
+            +superCard("Hợp tác nhân viên giao nhận - ShopeeFood Driver", "ShopeeFood Merchant", "ShopeeFood.vn", " là ứng dụng quản lý đơn hàng cho các nhà hàng đối tác của dịch vụ đặt món tận nơi ", " luôn sẵn sàng hợp tác với các nhà hàng, quán ăn, cafe... để mở rộng kinh doanh cũng như gia tăng khách hàng. Hãy kết nối vào hệ thống đặt và giao hàng để giảm bớt chi phí quản lý, vận hành, marketing, công nghệ... " , "width:170px", "https://shopeefood.vn/app/assets/img/bg-deliverynow-dat-mon-truc-tuyen-giao-hang-tan-noi.png?0a045d11888296eb26473f6126cad3f4", "NowMerchant App")
+            +superCard("ShopeeFood Merchant App", "ShopeeFood Merchant", "ShopeeFood.vn", " là ứng dụng quản lý đơn hàng cho các nhà hàng đối tác của dịch vụ đặt món tận nơi ", " luôn sẵn sàng hợp tác với các nhà hàng, quán ăn, cafe... để mở rộng kinh doanh cũng như gia tăng khách hàng. Hãy kết nối vào hệ thống đặt và giao hàng để giảm bớt chi phí quản lý, vận hành, marketing, công nghệ... " , "width:294px", "https://shopeefood.vn/app/assets/img/banner-phone-reg-merchant.png?d657e88bd087afc6919b1c6c6da0dc49", "NowMerchant App")

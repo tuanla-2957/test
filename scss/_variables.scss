@@ -1,0 +1,55 @@
+
+:root {
+    --ratio: 1;
+    --fs-xs: calc(0.75rem / var(--ratio));
+    --fs-s: calc(0.8125rem / var(--ratio));
+    --fs-l: calc(0.875rem / var(--ratio));
+    --fs-xl: calc(0.9375rem / var(--ratio));
+    --fs-base: calc(1rem / var(--ratio));
+    --fs-2xl: calc(1.5rem / var(--ratio));
+    --fs-3xl: calc(1.375rem / var(--ratio));
+    --fs-4xl: calc(2.25rem / var(--ratio));
+    --fs-5xl: calc(2.5rem / var(--ratio));
+    --fs-6xl : calc(3rem / var(--ratio));
+}
+
+
+$fs-xs: var(--fs-xs);
+$fs-s: var(--fs-s);
+$fs-l: var(--fs-l);
+$fs-xl: var(--fs-xl);
+$fs-base: var(--fs-base);
+$fs-2xl: var(--fs-2xl);
+$fs-3xl: var(--fs-3xl);
+
+
+$--blue: #0288d1;
+$--blue-dark: #187caa;
+$--red: #cf2127;
+$--sucsses: #6cc942;
+$--info: #0ccaff;
+$--warning: #ffc107;
+$--text-color: #464646;
+$--text-blue: #0088ff;
+$--text-gray: #959595;
+$--text-gray2: #6d6f71;
+$--text-dark: #252525;
+$--text-black: #000000;
+$--text-white: #ffffff;
+$--text-nav: #EE4d2D;
+
+$--bg-gray: #f0f0f0;
+$--bg-white: #ffffff;
+$--bg-base: #dedede;
+
+$--lh-base: 1.3125rem;
+$--lh-default: 1rem;
+$--lh-s: 1.25rem;
+$--lh-xs: 1.3125rem;
+$--lh-md: 1.4375rem;
+$--lh-l: 1.5rem;
+$--lh-xl: 1.5625rem;
+$--lh-2xl: 1.625rem;
+
+$--ff-base: 'Roboto', sans-serif;
+

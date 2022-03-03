@@ -1,0 +1,17 @@
+//- extends index.pug
+
+//- block header
+header.header.fixed-top.shadow
+    div.container
+        div.header__wrapper.row
+            div.logo.col-auto
+                a(href="#")
+                    img(src="https://shopeefood.vn/app/assets/img/shopeefoodvn.png?4aa1a38e8da801f4029b80734905f3f7", alt="Shoppefood") 
+                button.button-gray.d-none.d-xl-block TP. HCM
+            div.header-nav.col-auto.d-none.d-lg-block
+                include ./navbar
+            div.icon.col-auto 
+                <span class="icon icon-search-dark"></span>
+            button.button-danger.col-auto Đăng nhập
+    div.countries.shadow
+        

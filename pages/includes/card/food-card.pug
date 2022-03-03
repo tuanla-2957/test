@@ -1,0 +1,14 @@
+include ../../data/popular-foods
+
+each item, index in foods
+    div.card-wrapper.col-12
+        a(href="#")
+            div.card.card--large
+                img.card__img.card__img--large(src=item.img, alt="") 
+                div.card__info.ps-2
+                    h4.card__name.card__name--large=item.name
+                    p.card__address.card__address--large.text-blue=item.position
+                    div.d-flex.my-1 
+                        span.text-black=item.discount
+                        span.text-black.ms-2=item.price
+                    p.card__address=item.kind

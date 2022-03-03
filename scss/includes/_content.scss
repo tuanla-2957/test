@@ -1,0 +1,79 @@
+@import "./card"; 
+
+.content {
+    padding-top: 70px;
+    .content-wrapper{
+        position: relative;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background-image: url(https://shopeefood.vn/app/assets/img/main-banner.jpg?45bff8c9ec408a5ba51f9fdef662324e);
+        background-size: cover;
+        overflow: scroll;
+        z-index: 0;
+
+    
+        .now-infor {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .search {
+                color: $--text-white;
+                width: 470px;
+                z-index: 2;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-100%);
+
+                &__title {
+                    margin-bottom: 5px;
+                    font-size: $fs-2xl;
+                }
+
+                &__local {
+                    font-size: $fs-xl;
+                }
+            }
+
+        }
+        
+        .now-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            margin: 48px 0px 75px 0px;
+
+            @media only screen and (max-width: 1200px) {
+                align-items: center;
+            }
+    
+            .main-card {
+                padding: 13px 40px 10px 40px;
+                margin-bottom: 20px;
+                width: 670px;
+                background-color: white;
+                border: 1px solid #d7d7d7;
+                border-radius: 6px;
+    
+                .title {
+                    color: $--text-color;
+                }
+            }
+    
+            .main-card__other {
+                padding-right: 14px;
+            }
+        }
+    }
+
+    .content-bot {
+        position: relative;
+        top: 0;
+        background-color: $--bg-gray;
+    }
+
+    .content-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+}

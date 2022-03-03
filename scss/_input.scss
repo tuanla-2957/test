@@ -1,0 +1,21 @@
+.input-group {
+    width: 100%;
+    padding: 20px 0px;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    border: none;
+    line-height: $--lh-l;
+    font-size: $fs-base;
+}
+
+.input-search {
+    @extend input;
+    width: calc(96% - 70px);
+    border: 0;
+    padding: 13px 75px 13px 10px;
+    border-radius: 6px 10px 10px 6px;
+}

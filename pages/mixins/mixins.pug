@@ -1,0 +1,39 @@
+mixin titleItem(title, view)
+    .title-wraper.d-flex.justify-content-between.align-item-center
+        h6.title=title
+        a.text-blue(href="#")=view
+
+mixin superCard(title, brand1, brand2, text1, text2 , width, src, alt)
+    div.card.super-card.shadow
+        h4.super-card__title=title
+        span
+            p.super-card__text
+                b=brand1
+                span=text1 
+            p.super-card__text
+                b=brand2
+                span=text2
+                p.super-card__text
+                b=brand2
+                span=text2
+        div.corporation.d-none.d-md-flex
+                    img(style=width src=src, alt=alt)
+    
+mixin menuItem(name)
+    li.block__item
+        a(href="#")=name 
+
+mixin blockFooter(title)
+    div.block.col-lg-2.col-4
+        p.text-bold.block__title=title
+            ul.block__list
+                +menuItem("Giới thiệu")
+                +menuItem("Trung tâm Trợ giúp")
+                +menuItem("Quy chế")
+                +menuItem("Điều khoản sử dụng")
+                +menuItem("Bảo mật thông tin")
+                +menuItem("Giải quyết khiếu nại")
+                +menuItem("Liên hệ")
+                +menuItem("Hợp tác nhân viên giao nhận")
+                +menuItem("Đăng ký quán")
+                +menuItem("ShopeeFood Uni")

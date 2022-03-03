@@ -1,0 +1,11 @@
+include ../../data/discounts
+
+each item, index in discounts
+    div.card-wrapper.col-4
+        a(href=item.link)
+            div.card
+                img.card__img(src=item.img, alt="") 
+                div.card__info 
+                    div.card__text
+                        h4.card__name=item.title
+                        div.card__address.text-blue=item.position

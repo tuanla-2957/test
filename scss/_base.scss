@@ -1,0 +1,78 @@
+
+
+* {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: $fs-base;
+    box-sizing: border-box;
+    font-weight: 400;
+    color: $--text-color;
+    font-family: $--ff-base;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: $fs-l;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: $--text-color;
+}
+
+ol,
+ul {
+    margin-inline: 0px;
+    padding-left: 0px;
+    list-style: none;
+    outline: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+img,
+picture {
+    display: block;
+    max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+.text-blue {
+    color: $--blue !important;
+}
+
+.text-gray {
+    color: $--text-gray2 !important;
+}
+
+.fontxs {
+    font-size: $fs-xs !important;
+}
+
+.text-bold {
+    font-weight: 700 !important;
+}
